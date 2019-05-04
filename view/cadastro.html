@@ -53,49 +53,47 @@
         <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
 
          <div class="row">
-		    <form class="col s12">
+		    <form class="col s12" action="../functions/cadastrar.php" method="POST">
 		      <div class="row">
 		        <div class="input-field col s6">
-		          <input  id="cnpj" type="number" class="validate" name="cnpj" onblur="consultaCNPJ(this)">
+		          <input  id="cnpj" type="number" class="validate" name="cnpj" onblur="consultaCNPJ(this)" required >
 		          <label for="cnpj">CNPJ</label>
 		        </div>
 		        <div class="input-field col s6">
-		          <input id="nome_fantasia" type="text" class="validate" name="nomeFantasia" placeholder="Nome Fantasia" >
+		          <input id="nome_fantasia" type="text" class="validate" name="nomeFantasia" placeholder="Nome Fantasia" required >
 		          
 		        </div>
 		      </div>
 		      <div class="row">
 		        <div class="input-field col s12">
-		          <input id="razao_social" type="text" class="validate" name="razaoSocial" placeholder="Razao Social" >
-		       
+		          <input id="razao_social" type="text" class="validate" name="razaoSocial" placeholder="Razao Social" required >
 		        </div>
         </div>
           <div class="row">
 		        <div class="input-field col s12">
-		          <input  id="telefone" type="tel" class="validate" name="telefone" placeholder="Telefone" >
-		          
+		          <input  id="telefone" type="tel" class="validate" name="telefone" placeholder="Telefone" required >
 		        </div>
           </div>
 		      <div class="row">
 		        <div class="input-field col s12">
-		          <input id="senha" type="password" class="validate" name="senha">
+		          <input id="senha" type="password" class="validate" name="senha" required >
 		          <label for="senha">Senha</label>
 		        </div>
 		      </div>
 		      <div class="row">
 		        <div class="input-field col s12">
-		            <input id="confirmar_senha" type="password" class="validate" name="confirmarSenha">
+		            <input id="confirmar_senha" type="password" class="validate" name="confirmarSenha" required >
 		            <label for="confirmar_senha">Confirmar senha</label>
 		        </div>
-		      </div>
+          </div>
+          <div class='row'>
+              <button type='submit' name='btnCadastrar' class='col s12 btn btn-large waves-effect blue accent-2'>Cadastrar</button>
+            </div>
 		    </form>
 		  </div>
             
             <br />
             <center>
-              <div class='row'>
-                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect blue accent-2'>Cadastrar</button>
-              </div>
             </center>
           </form>
         </div>
