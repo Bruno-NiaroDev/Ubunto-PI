@@ -10,15 +10,14 @@ if(isset($_POST["btnCadastrar"])){
     $telefone = $_POST['telefone'];
     $senha = $_POST['senha'];
     $confirmarSenha = $_POST['confirmarSenha'];
-
+    
     $sqlInserir = "INSERT INTO instituicao (razaoSocial, cnpj, nomeFantasia, telefone, senha) VALUES ('$razaoSocial', $cnpj, '$nomeFantasia', '$telefone', '$senha')"; 
     if(mysqli_query($conexao,$sqlInserir) === true){
-        //redirecionar para tela principal do sistema!
+        header("Location: ../view/home.html");
     }else{
         echo mysqli_error($conexao);
          
-
-        //header("Location: ../view/cadastro.html?erro=ERRO AO CADASTRAR INSTITUICAO!");
+        header("Location: ../view/cadastro.html?erro=ERRO AO CADASTRAR INSTITUICAO!");
     }
 }else{
 

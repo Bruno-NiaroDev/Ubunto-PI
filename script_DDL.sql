@@ -33,8 +33,8 @@ CREATE TABLE IF NOT EXISTS `db_ubuntu`.`doacoes` (
   `instituicao_id` INT(11) NOT NULL,
   `doadores_id` INT(11) NOT NULL,
   PRIMARY KEY (`id`, `instituicao_id`, `doadores_id`),
-  INDEX `fk_teste_instituicao_idx` (`instituicao_id` ASC) VISIBLE,
-  INDEX `fk_teste_doadores1_idx` (`doadores_id` ASC) VISIBLE,
+  INDEX `fk_teste_instituicao_idx` (`instituicao_id` ASC),
+  INDEX `fk_teste_doadores1_idx` (`doadores_id` ASC),
   CONSTRAINT `fk_teste_doadores1`
     FOREIGN KEY (`doadores_id`)
     REFERENCES `mydb`.`doadores` (`id`)
@@ -76,7 +76,7 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `db_ubuntu`.`instituicao` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `razaoSocial` VARCHAR(100) NOT NULL,
-  `cnpj` INT(14) NOT NULL,
+  `cnpj` VARCHAR(14) NOT NULL UNIQUE,
   `nomeFantasia` VARCHAR(100) NOT NULL,
   `telefone` VARCHAR(14) NOT NULL,
   `senha` LONGTEXT NOT NULL,
