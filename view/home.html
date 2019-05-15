@@ -11,87 +11,86 @@
 </head>
 <body>
     <!-- NAVBAR -->
-<header>
+    <header>
         <nav>
-            <div class="nav-wrapper blue">
+            <div class="nav-wrapper white ">
                 <div class="row">
                     <div class="col s12">
                         <a href="#" data-target="sidenav-1" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
                         <a href="#" data-target="sidenav-2" class="right sidenav-trigger show-on-medium-and-up"><i class="material-icons">menu</i></a>
-                        <a href="#" class="brand-logo">Admin</a>
+                        <a href="#" class="brand-logo black-text">Admin</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    
+
+    <div class="row">
         
-    
-    
-    <!-- LEFT SIDEBAR	 -->
-    <ul id="sidenav-1" class="sidenav sidenav-fixed">
-        <li><a class="subheader">Ubunto-PI</a></li>
-        <li><a href="#" target="_blank">Home</a></li>
-        <li><a href="#" target="_blank">Lista</a></li>
-        <li><a href="#" target="_blank">Perfil</a></li>
-    </ul>
-    
+            <!-- LEFT SIDEBAR	 -->
+            <ul id="sidenav-1" class="sidenav sidenav-fixed blue accent-2">
+                <li><a class="subheader" >Ubunto-PI</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lista</a></li>
+                <li><a href="#">Perfil</a></li>
+            </ul>
 
-
-
-
-    <div id="card-stats">
-        <div class="row">
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-content  green white-text">
-                        <p class="card-stats-title"><i class="mdi-social-group-add"></i> Total arrecadado</p>
-                        <h4 class="card-stats-number">R$566.00</h4>
-                        </p>
+        <div style="margin-left: 300px">
+            <div id="card-stats">
+                <div class="row">
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-content  green white-text">
+                                <p class="card-stats-title"><i class="mdi-social-group-add"></i> Total arrecadado</p>
+                                <h4 class="card-stats-number">R$566,00</h4>
+                                </p>
+                            </div>
+                            <div class="card-action  green darken-2">
+                                <div id="clients-bar"><canvas width="290" height="25" style="display: inline-block; width: 290px; height: 25px; vertical-align: top;"></canvas></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-action  green darken-2">
-                        <div id="clients-bar"><canvas width="290" height="25" style="display: inline-block; width: 290px; height: 25px; vertical-align: top;"></canvas></div>
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-content purple white-text">
+                                <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>Total Doadores</p>
+                                <h4 class="card-stats-number">90</h4>
+                                </p>
+                            </div>
+                            <div class="card-action purple darken-2">
+                                <div id="sales-compositebar"><canvas width="286" height="25" style="display: inline-block; width: 286px; height: 25px; vertical-align: top;"></canvas></div>
+
+                            </div>
+                        </div>
+                    </div>                            
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-content blue-grey white-text">
+                                <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Novos doadores</p>
+                                <h4 class="card-stats-number">6</h4>
+                                </p>
+                            </div>
+                            <div class="card-action blue-grey darken-2">
+                                <div id="profit-tristate"><canvas width="290" height="25" style="display: inline-block; width: 290px; height: 25px; vertical-align: top;"></canvas></div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-content pink lighten-2 white-text">
+                                <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> Total arrecadado no ano</p>
+                                <h4 class="card-stats-number">R$1806,00</h4>
+                                </p>
+                            </div>
+                            <div class="card-action  pink darken-2">
+                                <div id="invoice-line"><canvas width="339" height="25" style="display: inline-block; width: 339px; height: 25px; vertical-align: top;"></canvas></div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-content purple white-text">
-                        <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>Total Doadores</p>
-                        <h4 class="card-stats-number">90</h4>
-                        </p>
-                    </div>
-                    <div class="card-action purple darken-2">
-                        <div id="sales-compositebar"><canvas width="286" height="25" style="display: inline-block; width: 286px; height: 25px; vertical-align: top;"></canvas></div>
-
-                    </div>
-                </div>
-            </div>                            
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-content blue-grey white-text">
-                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Novos doadores</p>
-                        <h4 class="card-stats-number">6</h4>
-                        </p>
-                    </div>
-                    <div class="card-action blue-grey darken-2">
-                        <div id="profit-tristate"><canvas width="290" height="25" style="display: inline-block; width: 290px; height: 25px; vertical-align: top;"></canvas></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-content pink lighten-2 white-text">
-                        <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> Total arrecadado no ano</p>
-                        <h4 class="card-stats-number">R$1806.00</h4>
-                        </p>
-                    </div>
-                    <div class="card-action  pink darken-2">
-                        <div id="invoice-line"><canvas width="339" height="25" style="display: inline-block; width: 339px; height: 25px; vertical-align: top;"></canvas></div>
-                    </div>
-                </div>
-            </div>
-            
+        
         </div>
     </div>
 </body>
