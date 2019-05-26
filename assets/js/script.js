@@ -20,3 +20,28 @@ function consultaCNPJ(campo){
     }) 
     console.log(valor)
 }
+
+function buscarCEP(cep) {
+
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://viacep.com.br/ws/" + cep.value + "/json/",
+        "method": "GET"
+    }
+
+    return dadosCEP = runAJAX(settings, function (response) {
+           $('#cep').val(response['cep'])
+           $('#uf').val(response['uf'])
+           $('#cidade').val(response['localidade'])
+           $('#bairro').val(response['bairro'])
+           $('#logradouro').val(response['logradouro'])
+
+    })
+}
+
+function runAJAX(settings, retorno) {
+    $.ajax(settings).done(function (response) {
+        retorno(response)
+    })
+}

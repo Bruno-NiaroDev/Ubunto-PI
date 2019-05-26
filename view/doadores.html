@@ -5,6 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Cadastrar Doadores</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="../vendor/jquery/3.4.0/jquery-3.4.0.min.js"></script>
+    <script src="../assets/js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/novocss.css">
      
@@ -29,7 +31,7 @@
             <li><a class="subheader" >Ubunto-PI</a></li>
             <li><a href="../view/home.html">Home</a></li>
             <li><a href="../view/doadores.html">Cadastrar doadores</a></li>
-            <li><a href="#">Lista</a></li>
+            <li><a href="../view/lista.html">Lista</a></li>
             <li><a href="#">Perfil</a></li>
         </ul>
     </div>
@@ -45,27 +47,27 @@
             </div>
             <div class="row">
                     <div class="input-field col s6">
-                      <input id="cep" type="text" name="cep" class="validate" placeholder="CEP">
+                      <input id="cep" type="text" name="cep" class="validate" placeholder="CEP" onblur="buscarCEP(this)" required>
                     </div>
             </div>   
             <div class="row">
                     <div class="input-field col s6">
-                      <input id="uf" type="text" name="uf" class="validate" placeholder="UF">
+                      <input id="uf" type="text" name="uf" class="validate" placeholder="UF" disabled>
                     </div>
             </div>  
             <div class="row">
                     <div class="input-field col s6">
-                      <input id="cidade" type="text" name="cidade" class="validate" placeholder="Cidade">
+                      <input id="cidade" type="text" name="cidade" class="validate" placeholder="Cidade" disabled>
                     </div>
             </div>  
             <div class="row">
                     <div class="input-field col s6">
-                      <input id="bairro" type="text" name="bairro" class="validate" placeholder="Bairro">
+                      <input id="bairro" type="text" name="bairro" class="validate" placeholder="Bairro" disabled>
                     </div>
             </div>  
             <div class="row">
                     <div class="input-field col s6">
-                      <input id="logradouro" type="text" name="logradouro" class="validate" placeholder="Logradouro">
+                      <input id="logradouro" type="text" name="logradouro" class="validate" placeholder="Logradouro" disabled>
                     </div>
             </div>  
             <div class="row">
@@ -93,5 +95,8 @@
                     <button type='submit' name='btnDoadores' class='col s12 btn btn-large waves-effect blue accent-2'>Cadastrar</button>
             </div>
         </form>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 </body>
 </html>
