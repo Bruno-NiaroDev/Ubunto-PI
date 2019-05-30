@@ -6,7 +6,7 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Cadastrar Doadores</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src='main.js'></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -52,64 +52,69 @@
     </div>
 
     <!-- Conteudo -->
-    <div class="col s12 l10 conteudo">
+    <div class="col s12 l10 conteudo ">
 
       <!-- Todo o conteudo que ira conter na pagina home -->
-      <div class="row">
-        <div class="col s12 l2">
-
-        </div>
-        <div class="col l8">
+      <div class="row container">
+       
+        <div class="container">
           <form action="../functions/doadores.php" method="POST">
             <div class="row row1">
-              <div class="input-field col s6 col1">
+              <div class="input-field col s12 m6 l6 col1">
                 <input id="nomeDoador" name="nomeDoador" type="text" class="validate">
                 <label for="nomeDoador">Nome Completo</label>
               </div>
-              <div class="input-field col s6 col1">
+              <div class="input-field col s12 m6 l6 col1">
                 <input id="cep" name="cep" type="text" class="validate" onblur="buscarCEP(this)" required>
                 <label for="cep">CEP</label>
               </div>
             </div>
             <div class="row row1">
-              <div class="input-field col s6 col1">
+              <div class="input-field col s12 m6 l6 col1">
                 <input id="uf" name="uf" type="text" class="validate" disabled>
                 <label for="uf">UF</label>
               </div>
-              <div class="input-field col s6 col1">
+              <div class="input-field col s12 m6 l6 col1">
                 <input id="cidade" name="cidade" type="text" class="validate" disabled>
                 <label for="cidade">Cidade</label>
               </div>
             </div>
             <div class="row row1">
-              <div class="input-field col s6 col1">
+              <div class="input-field col s12 m6 l6 col1">
                 <input id="bairro" name="bairro" type="text" class="validate" disabled>
                 <label for="bairro">Bairro</label>
               </div>
-              <div class="input-field col s6 col1">
+              <div class="input-field col s12 m6 l6 col1">
                 <input id="logradouro" name="logradouro" type="text" class="validate" disabled>
                 <label for="logradouro">Logradouro</label>
               </div>
             </div>
             <div class="row row1">
-                <div class="input-field col s4 col1">
-                  <input id="bairro" name="bairro" type="text" class="validate" disabled>
-                  <label for="bairro">Bairro</label>
+                <div class="input-field col s12 m12 l4 col1">
+                  <input id="numero" name="numero" type="text" class="validate">
+                  <label for="numero">Numero</label>
                 </div>
-                <div class="input-field col s4 col1">
-                  <input id="logradouro" name="logradouro" type="text" class="validate" disabled>
-                  <label for="logradouro">Logradouro</label>
+                <div class="input-field col s12 m12 l4 col1">
+                  <input id="telefone" name="telefone" type="text" class="validate">
+                  <label for="telefone">Telefone</label>
                 </div>
-                <div class="input-field col s4 col1">
-                    <input id="logradouro" name="logradouro" type="text" class="validate" disabled>
-                    <label for="logradouro">Logradouro</label>
-                  </div>
+                <div class="input-field col s12 m12 l4 col1">
+                  <input id="celular" name="celular" type="text" class="validate">
+                  <label for="celular">Celular</label>
+                </div>
+              </div>
+              <div class="row row1">
+                <div class="input-field col s12 m12 s12 col1">
+                  <input id="complemento" name="complemento" type="text" class="validate">
+                  <label for="complemento">Complemento</label>
+                </div>
+              </div>
+              <div class='row row1'>
+                <button type='submit' name='btnDoadores' class='col s12 btn btn-large waves-effect blue accent-2'>Cadastrar</button>
               </div>
           </form>
         </div>
-        <div class="col s12 l2">
-
-        </div>
+  
       </div>
 
     </div>
