@@ -8,6 +8,8 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../vendor/jquery/3.4.0/jquery-3.4.0.min.js"></script>
+  <script src="../assets/js/script.js"></script>
   <script src='main.js'></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -61,52 +63,42 @@
           <form action="../functions/doadores.php" method="POST">
             <div class="row row1">
               <div class="input-field col s12 m6 l6 col1">
-                <input id="nomeDoador" name="nomeDoador" type="text" class="validate">
-                <label for="nomeDoador">Nome Completo</label>
+                <input id="nomeDoador" name="nomeDoador" type="text" class="validate" placeholder="Nome Completo" required>
               </div>
               <div class="input-field col s12 m6 l6 col1">
-                <input id="cep" name="cep" type="text" class="validate" onblur="buscarCEP(this)" required>
-                <label for="cep">CEP</label>
+                <input id="cep" name="cep" type="text" class="validate" placeholder="CEP" onblur="buscarCEP(this)" required>
               </div>
             </div>
             <div class="row row1">
               <div class="input-field col s12 m6 l6 col1">
-                <input id="uf" name="uf" type="text" class="validate" disabled>
-                <label for="uf">UF</label>
+                <input id="uf" name="uf" type="text" class="validate" placeholder="UF" disabled>
               </div>
               <div class="input-field col s12 m6 l6 col1">
-                <input id="cidade" name="cidade" type="text" class="validate" disabled>
-                <label for="cidade">Cidade</label>
+                <input id="cidade" name="cidade" type="text" class="validate" placeholder="Cidade" disabled>
               </div>
             </div>
             <div class="row row1">
               <div class="input-field col s12 m6 l6 col1">
-                <input id="bairro" name="bairro" type="text" class="validate" disabled>
-                <label for="bairro">Bairro</label>
+                <input id="bairro" name="bairro" type="text" class="validate" placeholder="Bairro" disabled>
               </div>
               <div class="input-field col s12 m6 l6 col1">
-                <input id="logradouro" name="logradouro" type="text" class="validate" disabled>
-                <label for="logradouro">Logradouro</label>
+                <input id="logradouro" name="logradouro" type="text" class="validate" placeholder="Logradouro" disabled>
               </div>
             </div>
             <div class="row row1">
                 <div class="input-field col s12 m12 l4 col1">
-                  <input id="numero" name="numero" type="text" class="validate">
-                  <label for="numero">Numero</label>
+                  <input id="numero" name="numero" type="text"  class="validate" placeholder="Numero" required>
                 </div>
                 <div class="input-field col s12 m12 l4 col1">
-                  <input id="telefone" name="telefone" type="text" class="validate">
-                  <label for="telefone">Telefone</label>
+                  <input id="telefone" name="telefone" type="text" class="validate" placeholder="Telefone" required>
                 </div>
                 <div class="input-field col s12 m12 l4 col1">
-                  <input id="celular" name="celular" type="text" class="validate">
-                  <label for="celular">Celular</label>
+                  <input id="celular" name="celular" type="text" class="validate" placeholder="Celular" required>
                 </div>
               </div>
               <div class="row row1">
                 <div class="input-field col s12 m12 s12 col1">
-                  <input id="complemento" name="complemento" type="text" class="validate">
-                  <label for="complemento">Complemento</label>
+                  <input id="complemento" name="complemento" type="text" class="validate" placeholder="Complemento">
                 </div>
               </div>
               <div class='row row1'>
