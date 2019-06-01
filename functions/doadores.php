@@ -22,13 +22,13 @@ if(isset($_POST["btnDoadores"])){
       //                                  ('$nomeDoador', $cep, '$uf', '$cidade', '$bairro', '$logradouro', $numero, $telefone, $celular, '$complemento')"; 
       
     if(mysqli_query($conexao,$sqlInserir) === true){
-        header("Location: ../view/doadores.html");
+        header("Location: ../view/doadores_novo.html");
     }else{
         echo mysqli_error($conexao);
          
-        header("Location: ../view/doadores.html?erro=ERRO AO CADASTRAR DOADOR!");
+        header("Location: ../view/doadores_novo.html?erro=ERRO AO CADASTRAR DOADOR!");
     }
 }else{
 
-    header("Location: ../view/doadores.html");
+    header("Location: ../view/doadores_novo.html");
 }
