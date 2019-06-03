@@ -21,7 +21,7 @@
         <div class="col s12 l2">
             <nav>
                 <div class="nav-wrapper blue accent-2">
-                    <a href="#" class="brand-logo">Logo</a>
+                    <a href="#"><img src="../img/elusen.png" style="height: 100px; margin-top: -20px"></a>
                     <!-- menu Dispositivos Moveis -->
                     <ul id="slide-out" class="sidenav">
                         <li><a class="subheader">Menu</a></li>
