@@ -28,9 +28,9 @@
                         <li>
                             <div class="divider"></div>
                         </li>
-                        <li><a class="waves-effect" href="../view/home.php">Home</a></li>
-                        <li><a class="waves-effect" href="../view/doadores_novo.html">Cadastrar doadores</a></li>
-                        <li><a class="waves-effect" href="../view/lista.php">Lista</a></li>
+                        <li><a class="waves-effect" href="../view/home.php"><b>Home</b></a></li>
+                        <li><a class="waves-effect" href="../view/doadores_novo.html"><b>Cadastrar doadores</b></a></li>
+                        <li class="active"><a class="waves-effect" href="../view/lista.php"><b>Doadores</b></a></li>
                     </ul>
                     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 </div>
@@ -49,9 +49,9 @@
         <!-- Menu lateral -->
         <div class="col s2 menuLateral hide-on-med-and-down blue accent-2">
             <ul id="nav-mobile" class="hide-on-med-and-down li ">
-                <li><a class="waves-effect menu center-align black-text" href="../view/home.php">Home</a></li>
-                <li><a class="waves-effect menu center-align black-text" href="../view/doadores_novo.html">Cadastrar doadores</a></li>
-                <li><a class="waves-effect menu center-align black-text" href="../view/lista.php">Lista</a></li>
+                <li><a class="waves-effect menu center-align white-text" href="../view/home.php"><b>Home</b></a></li>
+                <li><a class="waves-effect menu center-align white-text" href="../view/doadores_novo.html"><b>Cadastrar doadores</b></a></li>
+                <li class="active"><a class="waves-effect menu center-align white-text blue accent-3" href="../view/lista.php"><b>Doadores</b></a></li>
             </ul>
         </div>
         <div class="col s12 m12 l2 hide-on-med-and-down">
