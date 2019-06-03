@@ -24,7 +24,7 @@
         <td><?= $doador['nomeDoador'] ?></td>
         <td><?= $doador['telefone'] ?></td>
         <td><?= $doador['cep'] ?></td>
-        <td><a class="btn" href="../view/alterar.php?id=<?=$doador['id']?>">alterar</a></td>
+        <td><a class="btn blue" href="../view/alterar.php?id=<?=$doador['id']?>">alterar</a></td>
         <td>
             <form action="../functions/remove-doador.php" method="post">
                 <input type="hidden" name="id" value="<?=$doador['id']?>" />
