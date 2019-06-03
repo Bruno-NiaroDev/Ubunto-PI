@@ -1,4 +1,0 @@
-Aqui ficara toda a documentação do PI
-
-inicio.html
-fica o dashboard
