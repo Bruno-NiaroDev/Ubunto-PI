@@ -69,6 +69,11 @@ CREATE TABLE IF NOT EXISTS `db_ubuntu`.`doadores` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
+ALTER TABLE doadores 
+ADD instituicao_id int not null DEFAULT 5;
+
+ALTER TABLE doadores
+ADD FOREIGN KEY (instituicao_id) REFERENCES instituicao(id);
 
 -- -----------------------------------------------------
 -- Table `db_ubuntu`.`instituicao`

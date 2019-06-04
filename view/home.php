@@ -1,3 +1,6 @@
+<?php 
+  include "../functions/conexao.php";
+?>
 <!DOCTYPE html>
 <html>
 
@@ -59,12 +62,19 @@
       <div class="col s12 m6 l3">
         <div class="card darken-1 cartao">
           <div class="card-content white-text light-blue">
-            <span class="card-title">Card Title</span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+            <span class="card-title">Total arrecadado</span>
+            <p class="num_relatorio"><?php
+              $sql = "SELECT CASE WHEN SUM(valor) IS NULL THEN 0"
+                      ." ELSE SUM(valor) END as totalDoacoes FROM "
+                      ."doacoes WHERE instituicao_id = 5;";
+              $resultado = mysqli_query($conexao, $sql);
+              foreach($resultado as $doadores) :
+                echo $doadores['totalDoacoes'];
+                endforeach
+            ?></p>
           </div>
           <div class="card-action light-blue darken-1">
-            <p>Total arrecadado</p>
+            <p></p>
 
           </div>
         </div>
@@ -73,12 +83,19 @@
       <div class="col s12 m6 l3">
         <div class="card cartao">
           <div class="card-content white-text teal accent-3">
-            <span class="card-title">Card Title</span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+            <span class="card-title">Total doadores</span>
+            <p class="num_relatorio"><?php
+              $sql = "SELECT COUNT(*) as totalDoadores FROM doadores "
+                    ."WHERE status = TRUE AND instituicao_id = 5;";
+                    $resultado = mysqli_query($conexao, $sql);
+                    foreach($resultado as $doadores) :
+                      echo $doadores['totalDoadores'];
+                      endforeach
+                  ?></p>
+          
           </div>
           <div class="card-action teal accent-4">
-            <p>Total de doadores</p>
+            <p></p>
 
           </div>
         </div>
@@ -87,12 +104,11 @@
       <div class="col s12 m6 l3">
         <div class="card cartao">
           <div class="card-content white-text blue-grey">
-            <span class="card-title">Card Title</span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+            <span class="card-title">Total arrecadado no mês</span>
+            <p class="num_relatorio">10</p>
           </div>
           <div class="card-action blue-grey darken-2">
-            <p>Total de doadores</p>
+            <p></p>
 
           </div>
         </div>
@@ -101,12 +117,12 @@
       <div class="col s12 m6 l3">
         <div class="card cartao">
           <div class="card-content white-text  purple lighten-2">
-            <span class="card-title">Card Title</span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+            <span class="card-title">Arrecadação REF ao mês</span>
+            <p class="num_relatorio">0</p>
           </div>
           <div class="card-action purple lighten-1">
-            <p>Novos doadores</p>
+            <p></p>
+
           </div>
         </div>
       </div>
